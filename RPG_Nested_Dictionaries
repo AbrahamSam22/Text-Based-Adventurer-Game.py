@@ -1,0 +1,170 @@
+# Abraham Samuel - This is a text based adventure game. The codes of this game will calculate the characters, inventory, and location that is needed for this adventure game.
+# 5th May, 2022
+# Listing RPG Nested Dictionaries
+# Character and Traits
+message = "Batman's secret identity is Bruce Wayne"
+print(message)
+message = "Batman's super power is martial arts"
+print(message)
+message = "Batman has 150 health points"
+print(message)
+
+print("\n")
+
+message = "Wonder Woman's secret identity is Diana Prince"
+print(message)
+message = "Wonder Woman's super power is super strength"
+print(message)
+message = "Wonder Woman has 200 health points"
+print(message)
+
+print("\n")
+
+message = "The Flash's secret identity is Barry Allen"
+print(message)
+message = "The Flash's super power is super speed"
+print(message)
+message = "The Flash has 90 health points"
+print(message)
+
+print("\n")
+
+# Locations and Descriptions
+heroes_location = {'The Flash', 'Batman', 'Wonder Woman'}
+
+print(f"Central City is the home of {'The Flash'}.")
+
+heroes_location = {'Justice League', 'Superman', 'Batman'}
+
+print(f"Hall of Justice is the headquarters for the {'Justice League'}.")
+
+heroes_location = {'Superman', 'Batman', 'Wonder Woman'}
+
+print(f"Bat Cave is the subterranean headquarters of {'Batman'}.")
+
+heroes_location = {'Wonder Woman', 'Superman', 'Batman'}
+
+print(f"Gotham City is the home of {'Batman'}.")
+
+heroes_location = {'Batman', 'Superman', 'The Flash'}
+
+print(f"Metropolis is the home of {'Superman'}.")
+
+heroes_location = {'The Flash', 'Superman', 'Wonder Woman'}
+
+print(f"Themyscira is the birth place of {'Wonder Woman'}.")
+
+print("\n")
+
+message = "You are on a Enemy Title (ET)tile. This is a location of an enemy. You must defeat the enemy to continue."
+print(message)
+
+message = "You are on a Boss Tile (BT)tile. This is a location of a Big Boss enemy. You may run away or fight the boss to continue."
+print(message)
+
+message = "You are on a Weapons Tile (WT)tile. This is a location of a weapon. You may pick up items or move to another location."
+print(message)
+
+message = "You are on a Supply Tile (ST)tile. This is a location of protection of healing itmes. You must pick up the weapon to continue."
+print(message)
+
+message = "You are on a Blank Tile (BT)tile. This is a location with no itmes. You may rest ot move to another location."
+print(message)
+
+print("\n")
+
+# Inventory and Characteristics
+# Make an empty list to store the inventories in.
+
+# Make individual heroes, and store each one in the list.
+# Wonder Woman
+heroes = []
+
+hero = {
+    'description': 'extracts truth from people',
+    'name': 'Lasso of Truth',
+    'damage': '0',
+    'protection': '5',
+}
+heroes.append(hero)
+
+hero = {
+    'description': 'bulletproof bracelets',
+    'name': 'Bracelets of Submission',
+    'damage': '100',
+    'protection': '50',
+}
+heroes.append(hero)
+
+hero = {
+    'description': 'magically-empowered sword wielded',
+    'name': 'Sword of Athena',
+    'damage': '500',
+    'protection': '0',
+}
+heroes.append(hero)
+
+# Display information about each inventory.
+for hero in heroes:
+    print(f"Wonder Woman's Special Inventory{hero['name'].title()}:")
+    for key, value in hero.items():
+        print(f"\t{key}: {value}")
+        
+# Batman
+heroes = []
+
+hero = {
+    'description': 'boomerang shaped like a bat',
+    'name': 'Batarang',
+    'damage': '10',
+    'protection': '0',
+}
+heroes.append(hero)
+
+hero = {
+    'description': 'pear-shooting spring-based device',
+    'name': 'Grapple hook',
+    'damage': '5',
+    'protection': '0',
+}
+heroes.append(hero)
+
+hero = {
+    'description': 'high frequency emitter allowing the control of bats',
+    'name': 'Sonic Bat Device',
+    'damage': '15',
+    'protection': '100',
+}
+heroes.append(hero)
+
+# Display information about each inventory.
+for hero in heroes:
+    print(f"Batman's Special Inventory {hero['name'].title()}:")
+    for key, value in hero.items():
+        print(f"\t{key}: {value}")
+        
+# The Flash
+heroes = []
+
+hero = {
+    'description': 'protection when travelling at super speed',
+    'name': 'Red suit',
+    'damage': '0',
+    'protection': '100',
+}
+heroes.append(hero)
+
+# Display information about each inventory.
+for hero in heroes:
+    print(f"The Flash's Special Inventory {hero['name'].title()}:")
+    for key, value in hero.items():
+        print(f"\t{key}: {value}")
+    
+    
+
+
+    
+        
+    
+
+
